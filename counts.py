@@ -8,4 +8,4 @@ assert count_upper_case("a") == 0, "One lower case"
 assert count_upper_case("!@£%&") == 0, "Bovinators"  
 assert count_upper_case("SHITYEAH") == 8, "One upper case" 
 
-print("All the tests passed")
+

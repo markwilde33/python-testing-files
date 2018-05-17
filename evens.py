@@ -9,13 +9,13 @@
 # assert even_number_of_evens([2, 3, 9, 10, 13, 7, 8, 5, 12]) == True, "Multible numbers, four even"
 # assert even_number_of_evens([1,3,9]) == False, "No even numbers"
 
-def is_even(number):
-    return number % 2 == 0
+# def is_even(number):
+#     return number % 2 == 0
     
-def even_number_of_evens(numbers):
+# def even_number_of_evens(numbers):
     
-    evens = sum([1 for n in numbers if is_even(n)])
-    return False if evens == 0 else is_even(evens)
+#     evens = sum([1 for n in numbers if is_even(n)])
+#     return False if evens == 0 else is_even(evens)
     
 # assert even_number_of_evens([]) == False, "No numbers"
 # assert even_number_of_evens([2, 4]) == True, "Two even numbers"
@@ -62,7 +62,11 @@ def even_number_of_evens(numbers):
         return False
     else:    
         return is_even(evens)        
-                
+        
+#  THIS CODE IS PYTHONIC OR IDIOMATIQUE PYTHON----IF UR COMFORTABLE WITH LIST COMPREHENSIONS---
+#  IT REDUCES ALL OF THE CODE ABOVE INTO 2 LINES
+#     evens = sum([1 for n in numbers if is_even(n)])
+#     return False if evens == 0 else is_even(evens)                
     
 assert even_number_of_evens([]) == False, "No numbers"
 assert even_number_of_evens([2, 4]) == True, "Two even numbers"
